@@ -1,26 +1,98 @@
 .App {
   text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  background: #224432;
+  height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(61, 105, 76);
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #E5F4EC;
+}
+
+.Dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.Display {
+  /* width: 400px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: purple;
+  /* height: 50%; */
+}
+
+.House-div {
+  background: yellow;
+}
+
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  background: rgb(30, 54, 34);
+  color: #FEC2C2;
+  height: 100vh;
+  width: 500px;
+}
+
+
+.Wizard {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  background: rgb(30, 54, 34);
+  color: #FEC2C2;
+  height: 100vh;
+  width: 500px;
+}
+
+.Wizard-header {
+  display: flex;
+  justify-content: space-around;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Add-complete {
+  background: rgb(5, 149, 5);
+  color: #E5F4EC;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.Cancel {
+  background: rgb(149, 5, 5);
+  color: #E5F4EC;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 @keyframes App-logo-spin {
@@ -31,3 +103,4 @@
     transform: rotate(360deg);
   }
 }
+

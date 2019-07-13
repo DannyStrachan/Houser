@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+// import axios from 'axios';
 import './App.css';
+import House from '../src/components/House/House';
+import Header from '../src/components/Header/Header';
+import { HashRouter } from "react-router-dom";
+import routes from "./routes";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <div className="App">
+        <header className="App-header">
+        <Header />
+        </header>
+        <div className="Content">
+          <House />
+          {/* <Link to="/" className="links">Dashboard</Link>
+          <Link to="/wizard" className="links">
+            <button type="button">
+              Click Me!
+            </button>
+            Wizard
+          </Link> */}
+        </div>
+        <div className="Display">{routes}</div>
+        
+      </div>
+    </HashRouter>
+
+    
   );
 }
 
